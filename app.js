@@ -44,10 +44,11 @@ const loadBooks = () => {
 
         // No result found error 
         if (data.numFound === 0) {
-            result.innerText = `No result found for ${searchField.value}`
+            result.innerText = `No result found `
             searchField.value = ''
 
-        } else {
+        }
+        else {
             result.innerText = `Showing ${resultNum} of ${data.numFound} Results for ${searchField.value}`
 
         }
